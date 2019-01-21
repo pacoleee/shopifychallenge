@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailsTableViewCell" customModule="Shopify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbW-sW-P3P">
+                    <rect key="frame" x="16" y="16" width="115" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqb-xg-v0e">
+                    <rect key="frame" x="16" y="74" width="96" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Kre-nS-bUj">
+                    <rect key="frame" x="252" y="16" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="MSz-hb-JMB"/>
+                        <constraint firstAttribute="width" constant="80" id="RfH-An-jR4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avail Inventory:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swZ-Fb-qFc">
+                    <rect key="frame" x="16" y="45" width="116" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yqb-xg-v0e" secondAttribute="bottom" constant="17" id="1Ca-p6-ZNc"/>
+                <constraint firstItem="yqb-xg-v0e" firstAttribute="top" secondItem="swZ-Fb-qFc" secondAttribute="bottom" constant="8" id="3GU-EQ-Fyb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Kre-nS-bUj" secondAttribute="bottom" constant="16" id="AuL-e4-qcP"/>
+                <constraint firstItem="fbW-sW-P3P" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="BQo-oe-MAO"/>
+                <constraint firstItem="Kre-nS-bUj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="QmZ-KZ-60r"/>
+                <constraint firstItem="swZ-Fb-qFc" firstAttribute="top" secondItem="fbW-sW-P3P" secondAttribute="bottom" constant="8" id="Qmy-b4-ghX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Kre-nS-bUj" secondAttribute="bottom" constant="16" id="SHS-aW-gQI"/>
+                <constraint firstItem="yqb-xg-v0e" firstAttribute="leading" secondItem="fbW-sW-P3P" secondAttribute="leading" id="Wbf-ZE-bfA"/>
+                <constraint firstItem="swZ-Fb-qFc" firstAttribute="leading" secondItem="fbW-sW-P3P" secondAttribute="leading" id="efa-vV-ThQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Kre-nS-bUj" secondAttribute="trailing" constant="16" id="nLe-V0-H6q"/>
+                <constraint firstItem="fbW-sW-P3P" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ucx-Eq-iSS"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="inventoryLabel" destination="swZ-Fb-qFc" id="Fwf-ZO-wPC"/>
+                <outlet property="nameLabel" destination="fbW-sW-P3P" id="cjX-Ed-MCN"/>
+                <outlet property="productImageView" destination="Kre-nS-bUj" id="oTi-xH-gsd"/>
+                <outlet property="titleLabel" destination="yqb-xg-v0e" id="xbu-1j-rwF"/>
+            </connections>
+            <point key="canvasLocation" x="116.8" y="-97.601199400299862"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="1920" height="1280"/>
+    </resources>
+</document>
